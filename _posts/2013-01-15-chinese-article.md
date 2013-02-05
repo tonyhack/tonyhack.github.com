@@ -8,7 +8,7 @@ tags : [vim, file title]
 
 使用vim自动生成文件头只需要在.vimrc文件中增加以下代码即可：
 
-{% highlight ruby %}
+{% highlight java %}
 
 map <F4> :call TitleDet()<CR>
 
