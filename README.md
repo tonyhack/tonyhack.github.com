@@ -1,4 +1,4 @@
-## thibaultlaurens.Github.com
+## tonyhack.Github.com
  
 This is my blog made with Github pages, Jekyll and Zurb's Foundation.
 
@@ -6,6 +6,6 @@ This is my blog made with Github pages, Jekyll and Zurb's Foundation.
 
 ### [Creative Commons](http://creativecommons.org/licenses/by-nc-sa/3.0/)
 
-### ThibaultLaurens
+### tonyhack
 
 >>>>>>> 8de9a14507b8d196d826c841b0db4af8e83c522f
