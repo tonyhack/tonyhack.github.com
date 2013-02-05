@@ -13,7 +13,7 @@ tagline: C/C++, Linux, network programming, Online Game, etc.
             <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
             <p>
                 <!--{{ post.content | strip_html | truncatewords:75}}-->
-		{{ post.content | truncatehtml: 100 }}
+		{{ post.content | truncatewords:100 | truncatehtml: 100 }}
                 <a href="{{ post.url }}"><strong>Read more.</strong></a><br/>
             </p>
             <p>
