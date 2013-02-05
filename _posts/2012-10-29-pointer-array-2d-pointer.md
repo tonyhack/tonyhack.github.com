@@ -8,7 +8,7 @@ tags : [c, pointer, array]
 
 编码中需要清楚地区分这两个概念，这也是容易引起错误的地方，以下是具体说明：
 
-{% highlight ruby %}
+{% highlight c++ %}
 
 map <F4> :call TitleDet()<CR>
 

@@ -8,7 +8,7 @@ tags : [c++, new, nothrow]
 
 无数的coder这样写：
 
-{% highlight ruby %}
+{% highlight c++ %}
 
 char *pointer = new Object;
 if(pointer == NULL) {
@@ -21,7 +21,7 @@ if(pointer == NULL) {
 
 让new操作符失败时不抛出异常：
 
-{% highlight ruby %}
+{% highlight c++ %}
 
 char *pointer = new (std::nothrow) Object;
 
