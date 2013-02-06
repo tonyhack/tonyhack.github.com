@@ -43,8 +43,7 @@ tagline: C/C++, Linux, network programming, Online Game, etc.
   <div class="two columns offset-by-one">
               <h4>Blogroll</h4>
               <ul>
-                  <!--<li><a target="_blank" title="Los Techies" href="http://lostechies.com/"><strong>Los Techies</strong></a></li>
-                  <strong><li><a target="_blank" title="" href=""></a></li></strong>-->
+                  <!--<strong><li><a target="_blank" title="" href=""></a></li></strong>-->
               </ul>
   </div>
 
