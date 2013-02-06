@@ -10,7 +10,12 @@ tags : [c++, Linux]
 
 {% highlight c++ %}
 
-无法解析的外部符号 "unsigned short __cdecl number_nxlh<unsigned short>(unsigned short,int,int,class boost::shared_ptr<class std::vector<unsigned char,class std::allocator<unsigned char> > >)" (??$number_nxlh@G@@YAGGHHV?$shared_ptr@V?$vector@EV?$allocator@E@std@@@std@@@boost@@@Z)，该符号在函数 "public: virtual void __thiscall SCMD60000Node::deserialize(class boost::shared_ptr<class std::vector<unsigned char,class std::allocator<unsigned char> > >)" (?deserialize@SCMD60000Node@@UAEXV?$shared_ptr@V?$vector@EV?$allocator@E@std@@@std@@@boost@@@Z) 中被引用
+无法解析的外部符号 "unsigned short __cdecl number_nxlh<unsigned short>(unsigned short,int,int,
+class boost::shared_ptr<class std::vector<unsigned char,class std::allocator<unsigned char> > >)" 
+(??$number_nxlh@G@@YAGGHHV?$shared_ptr@V?$vector@EV?$allocator@E@std@@@std@@@boost@@@Z)，
+该符号在函数 "public: virtual void __thiscall SCMD60000Node::deserialize(class boost::shared_ptr<
+class std::vector<unsigned char,class std::allocator<unsigned char> > >)" 
+(?deserialize@SCMD60000Node@@UAEXV?$shared_ptr@V?$vector@EV?$allocator@E@std@@@std@@@boost@@@Z) 中被引用
 
 {% endhighlight %}
 
