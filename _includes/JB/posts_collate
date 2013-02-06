@@ -88,7 +88,7 @@ Usage:
   <li>
     <div class="excerpt">
       <strong class="entry-title">
-        <a href="{{ BASE_PATH }}" title="{{ post.url }}" rel="bookmark">{{ post.title }}</a>
+        <a href="{{ BASE_PATH }}{{ post.url }}" title="{{ post.url }}" rel="bookmark">{{ post.title }}</a>
       </strong>
       <span class="date small">
         <abbr class="published" title="{{ post.date }}">{{ post.date | date_to_string }}</abbr>
