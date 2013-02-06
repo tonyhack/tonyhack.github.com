@@ -15,7 +15,6 @@ Usage:
       2) Next make sure to change 'post.previous.date' to:
         => 'post.next.date'
         
--->{% endcomment %}
 
 {% if site.JB.posts_collate.provider == "custom" %}
   {% include custom/posts_collate %}
@@ -48,3 +47,34 @@ Usage:
   {% endfor %}
 {% endif %}
 {% assign posts_collate = nil %}
+
+-->{% endcomment %}
+
+
+{% if site.JB.posts_collate.provider == "custom" %}
+  {% include custom/posts_collate %}
+{% else %}
+  {% for post in posts_collate  %}
+  
+    <li>
+      <strong class="entry-title">
+        <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+      </strong>
+      <span class="date small">
+        <abbr class="published" title="{{ post.date }}">{{ post.date | date_to_string }}</abbr>
+      </span>
+      <p class="alt-font">
+        Posted in&nbsp;
+        {% for category in post.categories %}
+        <a href="/categories/{{ category }}" title="{{ category }}" rel="category tag">{{ category }}</a>
+        {% endfor %}
+      </p>
+      <p class="comments-link">
+        <a href='{{post.url}}#disqus_thread'>Comments</a>
+      </p>
+    </li>
+
+  {% endfor %}
+{% endif %}
+{% assign posts_collate = nil %}
+
