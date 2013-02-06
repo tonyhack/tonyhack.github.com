@@ -19,6 +19,44 @@ a:focus { color: #2ba6cb; outline: none; }
 
 p a, p a:visited { line-height: inherit; }
 
+.excerpt {
+	background: url(/images/arrow-bullet.gif) no-repeat 0 12px;
+	border-bottom: 1px dotted #cecfd1;
+	color: #999;
+	padding: 12px 146px 12px 20px;
+	position:relative;
+}
+.excerpt strong.entry-title {
+	font-size: 14px;
+}
+.excerpt strong.entry-title a,
+.excerpt strong.entry-title a:visited {
+	color: #51555c;
+}
+.excerpt strong.entry-title a:hover {
+	color: #a00004;
+	text-decoration: none;
+}
+.excerpt .date {
+	margin-top:1.5em;
+}
+.excerpt p {
+	margin:0;
+}
+.excerpt .date,
+.excerpt .comments-link a,
+.excerpt .comments-link a:visited,
+.excerpt .comments-link span {
+	display: block;
+	width: 140px;
+}
+.excerpt .date,
+.excerpt .comments-link {
+	position:absolute;
+	right:0;
+	top:14px;
+}
+
 /* Misc ---------------------- */
 .left { float: left; }
 
