@@ -36,9 +36,9 @@ hello
 
 应该在main函数中增加:
 
-{% endhighlight %}
+{% highlight c++ %}
 
 t.join();
 
-{% highlight c++ %}
+{% endhighlight %}
 
