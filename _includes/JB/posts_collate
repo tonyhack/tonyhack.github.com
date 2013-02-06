@@ -48,7 +48,6 @@ Usage:
 {% endif %}
 {% assign posts_collate = nil %}
 
--->{% endcomment %}
 
 
 <ol class="archive">
@@ -81,3 +80,30 @@ Usage:
 {% assign posts_collate = nil %}
 
 </ol>
+
+-->{% endcomment %}
+
+<ol class="archive">
+{% for post in site.posts %}
+  <li>
+    <div class="excerpt">
+      <strong class="entry-title">
+        <a href="{{ BASE_PATH }}" title="{{ post.url }}" rel="bookmark">{{ post.title }}</a>
+      </strong>
+      <span class="date small">
+        <abbr class="published" title="{{ post.date }}">{{ post.date | date_to_string }}</abbr>
+      </span>
+      <p class="alt-font">
+        Posted in&nbsp;
+        {% for category in post.categories %}
+        <a href="/categories/{{ category }}" title="{{ category }}" rel="category tag">{{ category }}</a>
+        {% endfor %}
+      </p>
+      <p class="comments-link">
+        <a href='{{post.url}}#disqus_thread'>Comments</a>
+      </p>
+    </div>
+  </li>
+{% endfor %}
+</ol>
+
