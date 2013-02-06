@@ -51,6 +51,8 @@ Usage:
 -->{% endcomment %}
 
 
+<ol class="archive">
+
 {% if site.JB.posts_collate.provider == "custom" %}
   {% include custom/posts_collate %}
 {% else %}
@@ -78,3 +80,4 @@ Usage:
 {% endif %}
 {% assign posts_collate = nil %}
 
+</ol>

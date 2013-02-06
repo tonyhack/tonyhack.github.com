@@ -144,6 +144,18 @@ a i:hover{
 
 .full .full-content .read_more { float: right; }
 
+.archive {
+	border-top: 1px dotted #cecfd1;
+	list-style: none;
+	margin: 1.5em 0 0;
+}
+.archive li {
+	margin-bottom:0;
+}
+.archive .full {
+	margin-top:18px;
+}
+
 .excerpt {
 	background: url(/images/arrow-bullet.gif) no-repeat 0 12px;
 	border-bottom: 1px dotted #cecfd1;
