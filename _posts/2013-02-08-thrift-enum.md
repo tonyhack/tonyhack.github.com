@@ -48,12 +48,14 @@ class Role {
 
 {% highlight c++ %}
 
-Skill::Attack(core::uint64 src_id, core::uint64 dest_id, core::uint32 skill_id) {
+Skill::Attack(core::uint64 src_id, core::uint64 dest_id,
+      core::uint32 skill_id) {
   Role *src_role = RoleManager::GetInstance().GetRole(src_id);
   Role *dest_role = RoleManager::GetInstance().GetRole(src_id);
   if(src_role && dest_role) {
     core::uint32 hurt_value = this->GetBasicHurt(skill_id);
-    dest_role->SetAttribute(FieldsType::HP, dest_role->GetAttribute(FieldsType::HP) - hurt_value);
+    dest_role->SetAttribute(FieldsType::HP,
+        dest_role->GetAttribute(FieldsType::HP) - hurt_value);
   }
 }
 
@@ -144,12 +146,14 @@ class Role {
 
 {% highlight c++ %}
 
-Skill::Attack(core::uint64 src_id, core::uint64 dest_id, core::uint32 skill_id) {
+Skill::Attack(core::uint64 src_id, core::uint64 dest_id,
+      core::uint32 skill_id) {
   Role *src_role = RoleManager::GetInstance().GetRole(src_id);
   Role *dest_role = RoleManager::GetInstance().GetRole(src_id);
   if(src_role && dest_role) {
     core::uint32 hurt_value = this->GetBasicHurt(skill_id);
-    dest_role->SetAttribute(RolePublicFields::HP, dest_role->GetAttribute(RolePublicFields::HP) - hurt_value);
+    dest_role->SetAttribute(RolePublicFields::HP,
+        dest_role->GetAttribute(RolePublicFields::HP) - hurt_value);
   }
 }
 
